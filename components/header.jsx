@@ -1,14 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
-export default function header() {
+import { useRouter } from 'next/router';
+function Header() {
     const router = useRouter();
     const currentRoute = router.pathname;
   return (
     <nav className="shopping_mart_navbar navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
             <Link href='/'>
-                <a className="navbar-brand" href="/">Pranay Shoping Mart</a>
+                <a className="navbar-brand">Pranay Shoping Mart</a>
             </Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
@@ -36,3 +36,9 @@ export default function header() {
     </nav>
   )
 }
+export async function getStaticProps() {
+    return {
+      props: {},
+    }
+  }
+  export default Header;
