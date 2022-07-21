@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+.shopping_mart_navbar .nav-item{
+  padding: 4px 36px;
+}
+.shopping_mart_navbar .active_menu_hover{
+  /* padding: 4px 36px; */
+  background: cadetblue;
+  color: white;
+}

@@ -3,60 +3,20 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className="container-fluid">
+      <div className="row">
+        <div className='col-md-12'>
+            <h1 className='text-center p-3'>Amazon Deals</h1>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+        <div className='col-md-4'>
+            <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style={{width:'120px',height:'240px'}} marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pranaysurve-21&language=en_IN&marketplace=amazon&region=IN&placement=B0B3MNYGTW&asins=B0B3MNYGTW&linkId=1b161bdd67c7c3a82366a65216c008a3&show_border=true&link_opens_in_new_window=true"></iframe>
+        </div>
+        <div className='col-md-4'>
+        <iframe sandbox="allow-popups allow-scripts allow-modals allow-forms allow-same-origin" style={{width:'120px',height:'240px'}}  marginWidth="0" marginHeight="0" scrolling="no" frameBorder="0" src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=pranaysurve-21&language=en_IN&marketplace=amazon&region=IN&placement=B08K9QHBT2&asins=B08K9QHBT2&linkId=3c54f6a1ee9bf9a671909ef10108be26&show_border=true&link_opens_in_new_window=true"></iframe>
+        </div>
+        <div className='col-md-4'>
+        </div>
+      </div>
     </div>
   )
 }
